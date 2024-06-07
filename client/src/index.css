@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #002efc;
+    --opaque-blue: #d0d0fb;
+    --secondary-color: #C0C0EF;
+    --success-color: #1fb357;
+    --error-color: #b31f1f;
+}
+
+html{
+  font-family: 'Poppins';
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+  background: #eee;
+
+  
+}
+
+.container{
+  /* padding: 16px; */
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.primary-btn{
+  border: none;
+  background: var(--primary-color);
+  color: white;
+}
+
+.secondary-btn{
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.card-style, .percentage-card{
+    border: 2px solid #FFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.card-style:hover, .percentage-card.completed{
+    border: 2px solid #0C41FF;
+    background: linear-gradient(180deg, rgba(98, 98, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+
+
+.trash-icon, .pencil-icon{
+  cursor: pointer;
+}
+
+.pencil-icon{
+    transform: rotate(90deg);
+    padding: 4px;
+    margin: 0px 16px;
+}
+
+.trash-icon{
+  color: red;
+}
+
+
+       
+       
+    
+      
+/* Checkbox */
+
+.checkbox{
+  border: 1px solid #ddd;
+  transform: translateY(1px);
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.checkbox.active{
+  background: var(--primary-color);
+}
+
+.checkbox span {
+  transform: translateY(2px);
+}
+
+.calendar-checkbox{
+  height: 16px;
+  width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+
+
+
+.user-info, .plans-info{
+  padding: 16px;
+}
+
+
+/* REUSABLE COMPONENTS */
+
+
+/* Modal */
+.edit-times-container{
+  display: flex;
+  margin-top: 16px;
+}
+
+.edit-time{
+  margin-right: 16px;
+}
+
+.date-type{
+  margin-bottom: 8px;
+}
+
+.edit-time input{
+  margin-right: 8px;
+}
+
+
+/* Percentage */ 
+    .percentage-container{
+        position: relative;
+        background: #bbb;
+        border-radius: 4px;
+        width: 100%;
+        height: 24px;
+        margin: 16px 0px 8px;
+    }
+
+    .percentage{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--primary-color);
+        height: 24px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
